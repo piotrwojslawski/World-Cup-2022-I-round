@@ -7,26 +7,26 @@ The data used in this project is sourced from Kaggle (https://www.kaggle.com/dat
 # Methodology
 The project follows the following methodology:
 
-1. Data Cleaning and Preparation: The historical match data is cleaned and prepared by dropping irrelevant columns, creating dummy variables, and dividing the data into explanatory variables and explanatory variable.\
-2. Model Selection and Evaluation: Three different machine learning models (DecisionTreeClassifier, RandomForestClassifier, and AdaBoostClassifier) are trained and tested on the historical match data to evaluate their accuracy.\
+1. Data Cleaning and Preparation: The historical match data is cleaned and prepared by dropping irrelevant columns, creating dummy variables, and dividing the data into explanatory variables and explanatory variable.
+2. Model Selection and Evaluation: Three different machine learning models (DecisionTreeClassifier, RandomForestClassifier, and AdaBoostClassifier) are trained and tested on the historical match data to evaluate their accuracy.
 3. Prediction and Results: The AdaBoostClassifier model is selected as the best-performing model, and is used to predict the outcomes of the upcoming matches. The predicted outcomes of the matches are saved in a results.xlsx file.
 
 # Data Cleaning and Preparation
-The data was prepared by using the following explanatory variables for the model:\
-1. home_team\
-2. away_team\
-3. home_team_fifa_rank\
-4. away_team_fifa_rank\
-5. home_has_advantage (if the game is played at the host stadium)\
-6. home_team_goalkeeper_score\
-7. away_team_goalkeeper_score\
-8. home_team_mean_defense_score\
-9. home_team_mean_offense_score\
-10. home_team_mean_midfield_score\
-11. away_team_mean_defense_score\
-12. away_team_mean_offense_score\
-13. away_team_mean_midfield_score\
-14. home_team_score_rolling (average goals scored in last 3 games)\
+The data was prepared by using the following explanatory variables for the model:
+1. home_team
+2. away_team
+3. home_team_fifa_rank
+4. away_team_fifa_rank
+5. home_has_advantage (if the game is played at the host stadium)
+6. home_team_goalkeeper_score
+7. away_team_goalkeeper_score
+8. home_team_mean_defense_score
+9. home_team_mean_offense_score
+10. home_team_mean_midfield_score
+11. away_team_mean_defense_score
+12. away_team_mean_offense_score
+13. away_team_mean_midfield_score
+14. home_team_score_rolling (average goals scored in last 3 games)
 15. away_team_score_rolling (average goals lost in last 3 games)
 
 Missing data was filled using the bfill() and ffill() functions. When a country had no team data (goalkeeper_score, defense_score, mean_offense_score, midfield_score), then the team was assumed to be weak enough to assign it the lowest value in a given category.
