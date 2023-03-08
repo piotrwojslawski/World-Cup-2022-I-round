@@ -1,6 +1,6 @@
 # World-Cup-2022-I-round
 
-This repository contains a code for predicting the results of the first round of the World Cup. This repository contains the code for the first round of the World Cup 2022. The code is written in Python and uses various libraries for data analysis and visualization.
+This repository contains a code for predicting the results (win, lose, drawn) of matches for the first round of the World Cup. This repository contains the code for the first round of the World Cup 2022. The code is written in Python and uses various libraries for data analysis and visualization.
 
 The data used in this project is sourced from Kaggle (https://www.kaggle.com/datasets/brenda89/fifa-world-cup-2022). The data contains information on international matches, including the date of the match, the teams that played, and the scores.
 
