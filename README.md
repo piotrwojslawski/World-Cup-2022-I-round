@@ -35,8 +35,12 @@ Missing data was filled using the bfill() and ffill() functions. When a country 
 A function named metrics_display was created to train the model on the training set, determine the predictions, and compare them with the real results using the classification_report and ConfusionMatrixDisplay functions from Scikit-learn.
 
 The metrics_display function was used to train three different classification models: DecisionTreeClassifier, RandomForestClassifier, and AdaBoostClassifier. Among the three models, the AdaBoostClassifier model had the highest accuracy of 59% and was chosen for predicting the results of the first round of the World Cup.
+![image](https://user-images.githubusercontent.com/55345644/224542284-6c013cbd-44bc-4048-9a20-753e00fa1015.png)
+
 
 # Prediction and Results
 The AdaBoostClassifier model was used to predict the results of the first round of the World Cup using the predict function from Scikit-learn. The results were then saved in an Excel file named results.xlsx using Pandas.
 
 The results.xlsx file contains the predicted results for each match, with the home_team_if_win column indicating the predicted outcome for the home team. The results file is attached in the repository.
+![image](https://user-images.githubusercontent.com/55345644/224542306-c753b51b-bc3c-4d9c-8740-b6fb9ba0e01d.png)
+
